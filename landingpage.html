@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes Shop</title>
+  <style>
+    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Add other CSS styles here */
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .welcome-banner {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .products, .about-section {
+    display: none;
+  }
+  
+  .products {
+    padding: 20px;
+  }
+  
+  .products h2, .about-section h2 {
+    margin-top: 0;
+  }
+  
+  .product {
+    margin-bottom: 20px;
+    text-align:center;
+  }
+  
+  .product img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Clothes Shop</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="showMenProducts()">Men</a></li>
+        <li><a href="#" onclick="showWomenProducts()">Women</a></li>
+        <li><a href="#" onclick="showKidsProducts()">Kids</a></li>
+        <li><a href="#" onclick="showAbout()">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Welcome banner and logo -->
+    <section class="welcome-banner">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/617/820/small/clothing-logo-online-shop-fashion-icon-vector.jpg" alt="ROM TRENDS LOGO">
+        <h2>Welcome to ROM TRENDS</h2>
+        <h3>Discover the latest trends in fashion for men, women, and kids</h3>
+      </section>
+    
+
+  <section id="men" class="products">
+    <!-- Men's Collection content here -->    <h2>Men's Collection</h2>
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41ELCD1bOKL.SY550.jpg" alt="Men Product 1"><br>
+        <a href="https://www.amazon.in/dp/B0BLLDBD76?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_KS9K89BSF6FB2Q7MQ7DE">BUY NOW</a><br>
+        <h2>Brand: Gauri Laxmi Enterprise</h2>
+        <h3>Gauri Laxmi Enterprise Men's Cotton Blend Zari Lining Kurta Pyjama Set</h3>
+        <img src="https://m.media-amazon.com/images/I/51MBBTqQcvL.SX679.jpg" alt="Men Product 1"><br>
+        <a href="https://amzn.in/d/5FfdhF9">BUY NOW</a>
+        <h2>Brand: ELLITI</h2>
+        <h3>ELLITI Men's Casual Summer Night dress Soft Cotton Poly Lycra Digital Printed Casual Sleepwear & Launge(Lounge) Wear Nightdress, Regular Fit Round Neck Short Sleeves T-Shirt and shorts(Boxer) Pair set with Classic Pajama Shorts stylish Beach Wear Night Set night suit Dress for men</h3>
+      </div>
+
+  </section>
+
+  <section id="women" class="products">
+    <!-- Women's Collection content here -->
+    <h2>Women's Collection</h2>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71t-T81aWJL.SY741.jpg" alt="Women Product 1"><br>
+      <a href="https://amzn.in/d/j2S3jJj">BUY NOW</a><br>
+      <img src="https://m.media-amazon.com/images/I/71Hy7lDZiaL.SY741.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/12qBi8g">BUY NOW</a>
+    </div>
+  </section>
+
+  <section id="kids" class="products">
+    <!-- Kids' Collection content here -->
+    <h2>Kids' Collection</h2>
+    <div class="product">
+      <br>
+      <img src="https://m.media-amazon.com/images/I/71gRHUmaBGL.SX679.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/cQN87hN">BUY NOW</a>
+      <h2>Brand: Generic</h2>
+      <h3>Kids Night Suit Girls Palazzo Set Night Dress Printed Top and Pyjama Set Full Sleeve</h3>
+      <img src="https://m.media-amazon.com/images/I/61-F6XFVNVL.SX679.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/axlpZZx">BUY NOW</a>
+      <h2>Brand: superminis</h2>
+      <h3>superminis Boy's Cotton Kurta with Dhoti - Golden Thread Work, Round Collar, Full Sleeves, Side Button Kurta Set for Ethnic Wear</h3>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <!-- About Us content here -->
+    <h2>About Us</h2>
+    <p>Welcome to ROM TRENDS! We are dedicated to providing high-quality clothing for the whole family<br> at affordable prices. With a wide range of styles for men, women, and kids, we have something for everyone<br>Our mission is to help you look and feel your best, every day.</p><h3>contact:-</h3>
+123456789<br><h3>Email:-</h3>romtrends@gamial.com
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ROM TRENDS. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
+
+  <script>
+    // JavaScript code here
+    function showHome() {
+      // JavaScript functions here
+    }
+
+    // Add other JavaScript functions here
+    function showMenProducts() {
+    hideAllSections();
+    document.getElementById('men').style.display = 'block';
+  }
+  
+  function showWomenProducts() {
+    hideAllSections();
+    document.getElementById('women').style.display = 'block';
+  }
+  
+  function showKidsProducts() {
+    hideAllSections();
+    document.getElementById('kids').style.display = 'block';
+  }
+  
+  function showAbout() {
+    hideAllSections();
+    document.getElementById('about').style.display = 'block';
+  }
+  
+  function hideAllSections() {
+    const sections = document.querySelectorAll('.products, .about-section');
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+  }
+  
+  // Event listeners to show products when options are clicked
+  document.getElementById('men').addEventListener('click', showMenProducts);
+  document.getElementById('women').addEventListener('click', showWomenProducts);
+  document.getElementById('kids').addEventListener('click', showKidsProducts);
+
+  </script>
+
+</body>
+</html>
